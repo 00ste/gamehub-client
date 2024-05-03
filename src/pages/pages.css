@@ -1,0 +1,12 @@
+.main-page {
+    display:flex;
+    flex-direction: column;
+}
+
+.menu-buttons {
+    padding:10px;
+}
+
+.menu-buttons button {
+    margin:0px 10px;
+}
