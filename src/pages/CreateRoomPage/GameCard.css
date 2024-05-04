@@ -4,27 +4,50 @@
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
     border-radius: 15px;
     height: 5em;
+    border: 1px solid white;
+    animation-name: unhover-animation;
+    animation-duration: 200ms;
 }
 
 .game-card .text {
     display: flex;
     flex-direction: column;
     align-items: last baseline;
+    padding: 0px 10px;
 }
 
 .game-card .game-icon {
     height: 100%;
     background-color: #ccc;
-    margin-right: 10px;
     border-radius: 15px;
 }
 
 .game-card .game-title {
     font-weight: bold;
     font-size:larger;
+    margin:0px;
 }
 
 .game-card .game-description {
     font-size: small;
     color: #888;
+    margin:0px;
+
+}
+
+@keyframes hover-animation {
+    from {border: 1px solid white;}
+    to   {border: 1px solid #646cff;}
+}
+
+@keyframes unhover-animation {
+    from {border: 1px solid #646cff;}
+    to   {border: 1px solid white;}
+}
+
+.game-card:hover {
+    cursor: pointer;
+    border: 1px solid #646cff;
+    animation-name: hover-animation;
+    animation-duration: 200ms;
 }

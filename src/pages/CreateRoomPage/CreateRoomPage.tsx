@@ -23,7 +23,7 @@ const CreateRoomPage: React.FC<CreateRoomPageProps> = ({ gotoTitle, gotoWaiting 
 
     function createGameCards() {
         return (
-            games.map((game) => <GameCard title={game[0]} description={game[1]} icon={game[2]} />)
+            games.map((game) => <GameCard title={game[0]} description={game[1]} icon={game[2]} gotoGame={gotoWaiting} />)
         );
     }
 
@@ -35,7 +35,6 @@ const CreateRoomPage: React.FC<CreateRoomPageProps> = ({ gotoTitle, gotoWaiting 
                 {createGameCards()}
             </div>
             <div className="menu-buttons">
-                <button className="confirm-button" onClick={gotoWaiting}>Confirm</button>
                 <button className="back-button" onClick={gotoTitle}>Back to title</button>
             </div>
         </div>

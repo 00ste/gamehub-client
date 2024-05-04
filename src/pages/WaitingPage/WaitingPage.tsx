@@ -14,7 +14,7 @@ const WaitingPage: React.FC<WaitingPageProps> = ({ gotoTitle, gotoGame }) => {
         <div className="main-page">
             <h1>Game hub</h1>
             <h2>Waiting for players...</h2>
-            <div className="room-input">
+            <div className="menu-buttons">
                 <button className="back-button" onClick={gotoTitle}>Back to title</button>
                 <button className="start-game-button" onClick={gotoGame}>Start game</button>
             </div>
